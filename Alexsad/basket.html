@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+    <!-- Website Title & Description for Search Engine purposes -->
+    <!--    <title></title>-->
+    <meta name="description" content="">
+    <meta charset="utf-8">
+
+    <!-- Mobile viewport optimized -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+
+    <link href="includes/css/bootstrap.min.css" rel="stylesheet">
+    <link href="includes/css/styles.css" rel="stylesheet">
+    <link href="includes/css/normalize.css" rel="stylesheet">
+    <link href="includes/css/bootstrap3-wysihtml5.min.css" rel="stylesheet">
+    <link href="includes/css/font-awesome.min.css" rel="stylesheet">
+    <link href="includes/css/bootstrap-select.min.css" rel="stylesheet">
+</head>
+
+<body class="container-fluid background ">
+    <header>
+        <div onclick="jQuery('.bgDark').hide()" class="bgDark"></div>
+        <div class="bgDarkSm"></div>
+        <div class="container hidden-sm hidden-xs">
+            <div class="row headerTop globalMargin">
+                <div class="col-lg-8 col-md-8 ">
+                    <img src="images/phone.png" alt="1" class="phoneImg">
+                    <p class="phoneNumber ">+375 29 123-45-78</p>
+                    <img src="images/pin.png" alt="1" class="adressImg">
+                    <p class="adress">Минск, 222102, улица ХХХХ, д. ХХ/ХХ</p>
+                </div>
+                <div class="col-lg-4 col-md-4  ">
+                    <a href="#" class="user pull-right">
+                        <img src="images/user.png" alt="1" class="userImg "> Личный кабинет
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="border"></div>
+        <div class="container">
+            <div class="row headerMiddle ">
+                <div class="col-lg-4 col-md-4 col-sm-10 col-xs-10">
+                    <a href="#"><img class="logoImg" src="images/mainLogo.png" alt="1"></a>
+                </div>
+                <div class="col-lg-6 col-md-6 hidden-sm hidden-xs">
+                    <form class="formSearch" action="" method="get">
+                        <input class="inputSearch" name="s" placeholder="Поиск по сайту" type="search" required>
+                        <button class="submitSearch" type="submit"><img src="images/search.png" alt="1"></button>
+                    </form>
+                </div>
+                <div class="col-lg-2 col-md-2 hidden-sm hidden-xs">
+                    <a class="basketHeader" href="#">
+                        <img src="images/basket.png" alt="1"> Корзина
+                    </a>
+                    <p class="basketText">В корзине 0 товаров</p>
+                </div>
+
+
+                <div class="MenuSm col-sm-2 col-xs-2 hidden-lg hidden-md">
+
+                    <!--                phone menu-->
+
+                    <button id="logoMenuSm">
+                        <img src="images/logoMenuSm.png" alt="menu">
+                </button>
+
+                    <div class="sidenav ">
+                        <button id="closeMenuBtn">
+                        <img src="images/closeBtn.png" alt="menu">
+                        </button>
+                        <ul>
+                            <li><a href="#">Главная</a></li>
+                            <li><a href="#">Каталог</a></li>
+                            <li><a href="#">О нас</a></li>
+                            <li><a href="#">Доставка и оплата</a></li>
+                            <li><a href="#">Отзывы</a></li>
+                            <li><a href="#">Контакты</a></li>
+                        </ul>
+                        <form class="formSearchSm" action="" method="get">
+                            <input class="inputSearchSm" name="s" placeholder="Поиск по сайту" type="search" required>
+                            <button class="submitSearch" type="submit"><img src="images/seachBlack.png" alt="1"></button>
+                        </form>
+                        <a class="sidenavBtn1" href="#">Личный кабинет </a>
+                        <a class="sidenavBtn2" href="#">Корзина (0)</a>
+
+                    </div>
+                </div>
+            </div>
+
+
+            <!--            end phone menu-->
+
+
+            <div class="row backgroundMenu hidden-sm hidden-xs">
+                <nav class="col-lg-12 col-md-12  menuSpase">
+                    <ul class="headerMenu">
+                        <li><a href="#">Главная </a></li>
+                        <li role="presentation" class="dropdown dropMenu">
+                            <a onclick="jQuery('.bgDark').show()" class="dropdown-toggle " data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Каталог</a>
+                            <ul class="dropdown-menu dropList ">
+                                <li><a href="##">Ирисы <img src="images/arrowRight.png" alt="1"></a></li>
+                                <li><a href="#">Лилейники<img src="images/arrowRight.png" alt="1"></a></li>
+                                <li><a href="#">Хосты<img src="images/arrowRight.png" alt="1"></a></li>
+                                <li><a id="last" href="#">Покровники<img src="images/arrowRight.png" alt="1"></a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">О компании</a></li>
+                        <li><a href="#">Доставка и оплата</a></li>
+                        <li><a href="#">Комментарии и отзывы</a></li>
+                        <li><a href="#">Контакты</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+
+    </header>
+
+
+    <div class="container navDiv usernavDiv ">
+        <p>Главная / <span>Корзина</span></p>
+    </div>
+
+
+    <!-- Nav tabs -->
+    <div class="container userTabContainer">
+        <div class="row userTabBckgrd basketTabs">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 usertabBorder">
+                <ul class="myTabs myTabsProduct sss clearfix" role="tablist">
+                    <li role="presentation" class="active"><a id="t1" href="#tab1" aria-controls="tab1" role="tab" data-toggle="tab">Корзина </a><img class="hidden-sm hidden-xs" src="images/point.png" alt="">
+                    </li>
+                    <li role="presentation"><a id="t2" href="#tab2" aria-controls="tab2" role="tab" data-toggle="tab">Оформление заказа</a><img class="hidden-sm hidden-xs" src="images/point.png" alt=""></li>
+                    <li role="presentation" class=""><a id="t3" href="#tab3" aria-controls="tab3" role="tab" data-toggle="tab">Подтверждение заказа </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- Tab panes -->
+        <div class="tab-content  userTabContBckgr">
+            <div role="tabpanel" class="tab-pane active userTab1" id="tab1">
+                <h1>Корзина</h1>
+
+
+                <table class="  basketTable">
+                    <tr class="tr0 hidden-sm hidden-xs">
+                        <th>Фотохолст</th>
+                        <th></th>
+                        <th>Скидка</th>
+                        <th>Цена</th>
+                        <th>Количество</th>
+                        <th>Сумма</th>
+                        <th></th>
+                    </tr>
+                    <tr class="tr1">
+                        <td data-label="Фотохолст:"><img src="images/basketImg.png" alt=""></td>
+                        <td data-label="Лилейники:">
+                            <h3 class=" hidden-sm hidden-xs">Лилейники</h3>
+                            <p>Краткое описание<br>100 г.</p>
+                        </td>
+                        <td data-label="Скидка:" class="precent1">35,00%</td>
+                        <td data-label="Цена:" class="basketPrice1">24.90 </td>
+                        <td data-label="Количество:">
+                            <ul class="number ">
+                                <li><button class="btnJq1" id="btn1">-</button></li>
+                                <li>
+                                    <p id="num" class="baskenNumber1">1</p>
+                                </li>
+                                <li><button class="btnJq1" id="btn2">+</button></li>
+
+                            </ul>
+                        </td>
+                        <td data-label="Сумма:" class="summ1">16.18</td>
+                        <td data-label="Удалить:"><button class="tableBtn1"><img src="images/deleteImg.png" alt=""></button></td>
+
+                    </tr>
+<tr class="trMiddle hidden-lg hidden-md">
+    <td></td>
+</tr>
+                    <tr class="tr2 ">
+                        <td data-label="Фотохолст:"><img src="images/basketImg.png" alt=""></td>
+                        <td data-label="Лилейники:">
+                            <h3 class=" hidden-sm hidden-xs">Лилейники</h3>
+                            <p>Краткое описание<br>100 г.</p>
+                        </td>
+                        <td data-label="Скидка:" class="precent2">35,00%</td>
+                        <td data-label="Цена:" class="basketPrice2">24.90 </td>
+                        <td data-label="Количество:">
+                            <ul class="number">
+                                <li><button class="btnJq2" id="btn3">-</button></li>
+                                <li>
+                                    <p id="num2" class="baskenNumber2">1</p>
+                                </li>
+                                <li><button class="btnJq2" id="btn4">+</button></li>
+
+                            </ul>
+                        </td>
+                        <td data-label="Сумма:" class="summ2">16.18</td>
+                        <td data-label="Удалить:"><button class="tableBtn2"><img src="images/deleteImg.png" alt=""></button></td>
+
+                    </tr>
+
+                </table>
+
+                 
+
+
+                <div class="row basketBtns">
+                    <div class="col-lg-3  basketBtn1Col">
+                        <button class="postContact userPostContact basketBtn1">Очистить корзину</button>
+                    </div>
+                    <div class="col-lg-3 ">
+
+                    </div>
+                    <div class="col-lg-3 ">
+                        <button class="postContact userPostContact basketBtn2">Продолжить покупки</button>
+                    </div>
+                    <div class="col-lg-3 ">
+                        <button class="postContact userPostContact basketBtn3">Продолжить <img src="images/arrowRight.png" alt=""></button>
+                    </div>
+
+                </div>
+            </div>
+
+
+
+
+            <div role="tabpanel" class="tab-pane userTab2" id="tab2">
+                <h1>История заказов</h1>
+
+                <div class="row">
+                    <div class="col-lg-9 ggg">
+                        <button class="basketCollapse bC" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                          Доставка
+                        </button>
+                        <div class="collapse" id="collapseExample">
+                            <div class="basketCollapseContent">
+                                <div class="row">
+                                    <div class="col-lg-6 col-md-6">
+                                        <div class="checkbox sexCheck checkbox1">
+                                            <input type="radio" name="q" id="check"><label for="check">Доставка курьером </label>
+                                            <p>
+                                                Доставка осуществляется в течение дня в удобное для вас время.</p>
+                                            <h5>Стоимость доставки: 50.00</h5>
+                                        </div>
+
+                                    </div>
+                                    <div class="col-lg-6 col-md-6">
+                                        <div class="checkbox sexCheck checkbox2">
+
+                                            <input type="radio" name="q" id="check1"><label for="check1">Самовывоз</label>
+                                            <p>
+                                                Вы можете самостоятельно забрать заказ из нашего магазина.
+                                            </p>
+                                            <h5>Адрес самовывоза: смотреть на карте</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="basketCollapseBtn">
+                                    <button class="basketBtn5">Далее <img src="images/arrowLeftGreen.png" alt=""></button>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="basketCollapse" type="button" data-toggle="collapse" data-target="#collapseExample1" aria-expanded="false" aria-controls="collapseExample1">
+                          Оплата
+                        </button>
+                        <div class="collapse" id="collapseExample1">
+                            <div class="basketCollapseContent">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste veritatis natus, ducimus corporis placeat molestias cumque esse dignissimos? Magnam ratione beatae, aliquam, alias quaerat maxime voluptatum fuga accusantium ullam voluptatibus.
+                            </div>
+                        </div>
+                        <button class="basketCollapse" type="button" data-toggle="collapse" data-target="#collapseExample2" aria-expanded="false" aria-controls="collapseExample2">
+                          Контактные данные
+                        </button>
+                        <div class="collapse" id="collapseExample2">
+                            <div class="basketCollapseContent">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste veritatis natus, ducimus corporis placeat molestias cumque esse dignissimos? Magnam ratione beatae, aliquam, alias quaerat maxime voluptatum fuga accusantium ullam voluptatibus.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 ">
+                        <div class="totalPrice">
+                            <div class="yourOrder">
+                                <h3>Ваш заказ</h3>
+                                <a href="#">Изменить</a>
+                            </div>
+                            <div class="total1">
+                                <div class="total11">
+                                    <p>Товаров на сумму:</p>
+                                    <h4>24.90</h4>
+                                </div>
+                                <div class="total12">
+                                    <p>Доставка:</p>
+                                    <h4>24.90</h4>
+                                </div>
+                            </div>
+                            <div class="total2">
+                                <h2>ИТОГО:</h2>
+                                <h1>56.90</h1>
+                            </div>
+                            <div class="totalPriceBtn">
+
+                                <button class="basketBtn6">Оформить заказ </button>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div role="tabpanel" class="tab-pane userTab3 busketTab3" id="tab3">
+                <h1>Подтверждение заказа</h1>
+                <div class="done">
+                    <img src="images/done.png" alt="">
+                    <h3>Ваш заказ №1399 от 06.02.2017 20:59:56 успешно создан.</h3>
+                    <p>Вы можете следить за своим заказом в Личном кабинете.</p>
+                    <p>Обратите внимание, что для входа в этот раздел вам необходимо будет ввести логин и пароль пользователя сайта.
+                    </p>
+                </div>
+                <button class="basketBtn7">Перейти на главную</button>
+                <button class="basketBtn8">Личный кабинет <img src="images/arrowRight.png" alt=""></button>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+    <footer>
+        <div class="container footerCont">
+            <div class="row">
+                <div class="col-lg-4 col-md-4 footer1Col">
+                    <div class="footer1ColMargin">
+                        <h1 class="tel">+375 29 123- 45- 69</h1>
+                        <div class="hidden-md hidden-lg"></div>
+
+                        <a id="call" href="#">Заказать звонок</a>
+                        <p class="hidden-sm hidden-xs">2017 © Gardens - интернет-магазин для продажи<br> семян редких растений. Все права защищены</p>
+                        <h2 class="hidden-sm hidden-xs">К оплате принимаются:</h2>
+                        <img class="hidden-sm hidden-xs" src="images/pay_icons.png" alt="pay">
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-2 footerUl">
+                    <h2 class="hidden-sm hidden-xs">Каталог</h2>
+                    <ul>
+                        <li><a href="#">Ирисы</a></li>
+                        <li><a href="#">Лилейники</a></li>
+                        <li><a href="#">Хосты</a></li>
+                        <li><a href="#">Покровники</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-3 footerUl Ul2">
+                    <h2 class="hidden-sm hidden-xs">Информация</h2>
+                    <ul>
+                        <li><a href="#">О компании</a></li>
+                        <li><a href="#">Оплата и доставка</a></li>
+                        <li><a href="#">Комментарии и отзывы</a></li>
+                        <li><a href="#">Контакты</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-3 footerPrise">
+                    <h2>Скачать прайс-лист:</h2>
+                    <a href="#"><img src="images/download.png" alt="dowload">Прайс-лист (240 Кб)</a>
+
+                    <p>Мы в социальных сетях:</p>
+                    <a href="#"><img src="images/vk.png" alt="vk"></a>
+                    <a href="#"><img src="images/facebook.png" alt="f"></a>
+                    <a href="#"><img src="images/twitter.png" alt="t"></a>
+
+                    <p class="hidden-lg hidden-md footerP">2017 © Gardens - интернет-магазин для продажи семян редких растений. Все права защищены</p>
+                    <h2 class="hidden-lg hidden-md">К оплате принимаются:</h2>
+                    <img class="hidden-lg hidden-md" src="images/pay_icons.png" alt="pay">
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div class="container lr">
+        <div class="col-lg-6 col-md-6 l">
+            <p>2017 © Gardens</p>
+        </div>
+        <div class="col-lg-6 col-md-6 r">
+            <p>Разработка сайта Gik Media</p>
+        </div>
+    </div>
+
+
+
+    <!-- All Javascript at the bottom of the page for faster page loading -->
+
+    <script>
+        window.jQuery || document.write('<script src="includes/js/jquery-3.1.1.min.js"><\/script>')
+    </script>
+
+    <script src="includes/js/bootstrap.min.js"></script>
+    <script src="includes/js/myjs.js"></script>
+
+    <!--    wysiwyg-->
+    <script src="includes/js/bootstrap3-wysihtml5.all.min.js"></script>
+    <!--    select-->
+    <script src="includes/js/bootstrap-select.min.js"></script>
+
+</body>
+
+</html>

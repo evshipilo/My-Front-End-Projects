@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+    <!-- Website Title & Description for Search Engine purposes -->
+    <!--    <title></title>-->
+    <meta name="description" content="">
+    <meta charset="utf-8">
+
+    <!-- Mobile viewport optimized -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+
+    <link href="includes/css/bootstrap.min.css" rel="stylesheet">
+    <link href="includes/css/styles.css" rel="stylesheet">
+    <link href="includes/css/normalize.css" rel="stylesheet">
+    <link href="includes/css/bootstrap3-wysihtml5.min.css" rel="stylesheet">
+    <link href="includes/css/font-awesome.min.css" rel="stylesheet">
+
+</head>
+
+<body class="container-fluid background ">
+    <header>
+        <div onclick="jQuery('.bgDark').hide()" class="bgDark"></div>
+        <div class="bgDarkSm"></div>
+        <div class="container hidden-sm hidden-xs">
+            <div class="row headerTop globalMargin">
+                <div class="col-lg-8 col-md-8 ">
+                    <img src="images/phone.png" alt="1" class="phoneImg">
+                    <p class="phoneNumber ">+375 29 123-45-78</p>
+                    <img src="images/pin.png" alt="1" class="adressImg">
+                    <p class="adress">Минск, 222102, улица ХХХХ, д. ХХ/ХХ</p>
+                </div>
+                <div class="col-lg-4 col-md-4  ">
+                    <a href="#" class="user pull-right">
+                        <img src="images/user.png" alt="1" class="userImg "> Личный кабинет
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="border"></div>
+        <div class="container">
+            <div class="row headerMiddle ">
+                <div class="col-lg-4 col-md-4 col-sm-10 col-xs-10">
+                    <a href="#"><img class="logoImg" src="images/mainLogo.png" alt="1"></a>
+                </div>
+                <div class="col-lg-6 col-md-6 hidden-sm hidden-xs">
+                    <form class="formSearch" action="" method="get">
+                        <input class="inputSearch" name="s" placeholder="Поиск по сайту" type="search" required>
+                        <button class="submitSearch" type="submit"><img src="images/search.png" alt="1"></button>
+                    </form>
+                </div>
+                <div class="col-lg-2 col-md-2 hidden-sm hidden-xs">
+                    <a class="basketHeader" href="#">
+                        <img src="images/basket.png" alt="1"> Корзина
+                    </a>
+                    <p class="basketText">В корзине 0 товаров</p>
+                </div>
+
+
+                <div class="MenuSm col-sm-2 col-xs-2 hidden-lg hidden-md">
+
+                    <!--                phone menu-->
+
+                    <button id="logoMenuSm">
+                        <img src="images/logoMenuSm.png" alt="menu">
+                </button>
+
+                    <div class="sidenav ">
+                        <button id="closeMenuBtn">
+                        <img src="images/closeBtn.png" alt="menu">
+                        </button>
+                        <ul>
+                            <li><a href="#">Главная</a></li>
+                            <li><a href="#">Каталог</a></li>
+                            <li><a href="#">О нас</a></li>
+                            <li><a href="#">Доставка и оплата</a></li>
+                            <li><a href="#">Отзывы</a></li>
+                            <li><a href="#">Контакты</a></li>
+                        </ul>
+                        <form class="formSearchSm" action="" method="get">
+                            <input class="inputSearchSm" name="s" placeholder="Поиск по сайту" type="search" required>
+                            <button class="submitSearch" type="submit"><img src="images/seachBlack.png" alt="1"></button>
+                        </form>
+                        <a class="sidenavBtn1" href="#">Личный кабинет </a>
+                        <a class="sidenavBtn2" href="#">Корзина (0)</a>
+
+                    </div>
+                </div>
+            </div>
+
+
+            <!--            end phone menu-->
+
+
+            <div class="row backgroundMenu hidden-sm hidden-xs">
+                <nav class="col-lg-12 col-md-12  menuSpase">
+                    <ul class="headerMenu">
+                        <li><a href="#">Главная </a></li>
+                        <li role="presentation" class="dropdown dropMenu">
+                            <a onclick="jQuery('.bgDark').show()" class="dropdown-toggle " data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Каталог</a>
+                            <ul class="dropdown-menu dropList ">
+                                <li><a href="##">Ирисы <img src="images/arrowRight.png" alt="1"></a></li>
+                                <li><a href="#">Лилейники<img src="images/arrowRight.png" alt="1"></a></li>
+                                <li><a href="#">Хосты<img src="images/arrowRight.png" alt="1"></a></li>
+                                <li><a id="last" href="#">Покровники<img src="images/arrowRight.png" alt="1"></a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">О компании</a></li>
+                        <li><a href="#">Доставка и оплата</a></li>
+                        <li><a href="#">Комментарии и отзывы</a></li>
+                        <li><a href="#">Контакты</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+
+    </header>
+
+
+    <div class="container navDiv">
+        <p>Главная / Каталог / <span>Ирисы</span></p>
+    </div>
+
+    <div class="container product">
+        <div class="row">
+
+            <div class="col-lg-5 col-md-12 mdAllign">
+                <div class="productImg">
+                    <img class="imgLg" src="images/productLarge.png" alt="prod">
+                    <div class="rowImg">
+                        <div class="imgSm" id="imgSm1"><img src="images/productSmall.png" alt="prod"></div>
+                        <div class="imgSm" id="imgSm2"><img src="images/productSmall.png" alt="prod"></div>
+                        <div class="imgSm" id="imgSm3"><img src="images/productSmall.png" alt="prod"></div>
+                        <div class="imgSm" id="imgSm4"><img src="images/productSmall.png" alt="prod"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-7 col-md-12 mdAllign">
+                <p class="Art"><span>Артикул:</span> 1235978</p>
+                <h1>Лилейники ландшафтные</h1>
+                <img class="stars" src="images/5-stars.png" alt="5">
+                <a class="flowerPriseReport" href="#">4 отзыва</a>
+                <p class="productPrise"><span>24.90</span> за 100г. (упаковка)</p>
+                <ul class="number">
+                    <li><button id="btn1">-</button></li>
+                    <li>
+                        <p id="num">1</p>
+                    </li>
+                    <li><button id="btn2">+</button></li>
+
+                </ul>
+                <div class="hidden-lg"></div>
+                <a class="ProductflowerPriseBasket" href="#">В корзину <img class="flowerPriseBasketImg" src="images/basket.png" alt=""></a>
+                <p class="inform">Листья прикорневые, широколинейные, двурядные, дуговидно изогнутые или прямые. Цветки лилейника шестираздельные, крупные, чаще всего воронковидные, оранжевого, желтого, красно-коричневого или желтого оттенков, собраны по несколько штук в соцветия. </p>
+                <div class="aSocialDiv">
+                    <a class="aSocial" href="#"><img class="facebook" src="images/facebookShare.png" alt=""></a>
+                    <div class="socialCount">
+                        <img class="facebookCount" src="images/socialCount.png" alt="">
+                        <span>693K</span>
+                    </div>
+                    <div class="hidden-lg hidden-md"></div>
+                    <a class="aSocial" href="#"><img class="vk" src="images/vkLike.png" alt=""></a>
+                    <div class="socialCount">
+                        <img class="vkCount" src="images/socialCount.png" alt="">
+                        <span>693K</span>
+                    </div>
+                    <div class="hidden-lg hidden-md"></div>
+                    <a class="aSocial" href="#"><img class="tvitter" src="images/tvitterShare.png" alt=""></a>
+                    <div class="socialCount">
+                        <img class="tvitterCount" src="images/socialCount.png" alt="">
+                        <span>693K</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+
+
+
+    <!-- Nav tabs -->
+    <div class="container tabBack">
+        <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 tabBorder">
+                <ul class="myTabs myTabsProduct mmm clearfix" role="tablist">
+                    <li role="presentation" class="active">
+                        <a id="t1" href="#tab1" aria-controls="tab1" role="tab" data-toggle="tab">Описание </a><img class="hidden-sm hidden-xs" src="images/point.png" alt="">
+                    </li>
+                
+                    <li role="presentation" class="">
+                        <a id="t2" href="#tab2" aria-controls="tab2" role="tab" data-toggle="tab">Оплата и доставка </a><img class="hidden-sm hidden-xs" src="images/point.png" alt="">
+                    </li>
+                    <li role="presentation" class="">
+                        <a id="t3" href="#tab3" aria-controls="tab3" role="tab" data-toggle="tab">Дополнительная информация </a><img class="hidden-sm hidden-xs" src="images/point.png" alt="">
+                    </li>
+                    <li role="presentation">
+                        <a id="t4" href="#tab4" aria-controls="tab4" role="tab" data-toggle="tab">Отзывы о товаре (2)</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- Tab panes -->
+        <div class="tab-content tabContentPadding tabContentPaddingProduct ">
+            <div role="tabpanel" class="tab-pane  active" id="tab1">
+                <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique, magni. Ullam odit, dolore porro velit eligendi sint, fugiat deleniti at impedit! Beatae voluptates exercitationem eum ut facere, nulla dolorem id.</div>
+                <div>A sit explicabo nesciunt rem harum quas itaque excepturi fugiat quis unde vero quo impedit rerum eveniet ab, enim tempora earum error animi quaerat ipsum optio quisquam nulla. Soluta, odit.</div>
+
+            </div>
+            
+
+            <div role="tabpanel" class="tab-pane" id="tab2">
+                <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique, magni. Ullam odit, dolore porro velit eligendi sint, fugiat deleniti at impedit! Beatae voluptates exercitationem eum ut facere, nulla dolorem id.</div>
+                <div>A sit explicabo nesciunt rem harum quas itaque excepturi fugiat quis unde vero quo impedit rerum eveniet ab, enim tempora earum error animi quaerat ipsum optio quisquam nulla. Soluta, odit.</div>
+                <div>Distinctio quam ratione suscipit alias ab deleniti quidem doloribus itaque nihil, eligendi consequatur recusandae quasi dolore reiciendis impedit nobis perspiciatis autem, odit quo illo magni excepturi iste error sed. Nihil.</div>
+                <div>Cupiditate, dolorum qui voluptates explicabo, nisi obcaecati veritatis ipsa possimus nam ad, a eos voluptatibus provident delectus. Perferendis accusamus commodi esse, maiores nobis numquam. Exercitationem accusamus officia a eius odit.</div>
+                <div>Quo totam, sequi aut explicabo dolorem sed! Maiores est esse, aliquam sed nobis doloremque ullam corporis unde amet vero, tempora ex? Ducimus mollitia possimus quod, corrupti incidunt quo tenetur excepturi!</div>
+            </div>
+            <div role="tabpanel" class="tab-pane" id="tab3">
+                <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique, magni. Ullam odit, dolore porro velit eligendi sint, fugiat deleniti at impedit! Beatae voluptates exercitationem eum ut facere, nulla dolorem id.</div>
+                <div>A sit explicabo nesciunt rem harum quas itaque excepturi fugiat quis unde vero quo impedit rerum eveniet ab, enim tempora earum error animi quaerat ipsum optio quisquam nulla. Soluta, odit.</div>
+                <div>Distinctio quam ratione suscipit alias ab deleniti quidem doloribus itaque nihil, eligendi consequatur recusandae quasi dolore reiciendis impedit nobis perspiciatis autem, odit quo illo magni excepturi iste error sed. Nihil.</div>
+                <div>Cupiditate, dolorum qui voluptates explicabo, nisi obcaecati veritatis ipsa possimus nam ad, a eos voluptatibus provident delectus. Perferendis accusamus commodi esse, maiores nobis numquam. Exercitationem accusamus officia a eius odit.</div>
+
+            </div>
+            <div role="tabpanel" class="tab-pane" id="tab4">
+                <div class="row productQuotes">
+                    <div class="col-lg-1 col-md-1">
+                        <img class="imgAvatar" src="images/imgAvatar.png" alt="img">
+                    </div>
+                    <div class="col-lg-11 col-md-11 ">
+                        <h1>Иванов Иван</h1>
+                        <img class="productStars hidden-sm hidden-xs" src="images/stars.png" alt="">
+                        <p class="date">15 апреля 2015</p>
+                        <div class="hidden-lg hidden-md"><img class="productStars " src="images/stars.png" alt=""></div>
+                        <p class="quotePre1">Замечательный паб. В самом центре. Радует выбор блюд и закусок и пива. атмосфера неповторимая, как в настоящем пабе. Интерьер грандиозный. Кажется тут советская Яма была раньше - очень крутое помещение - красавцы. Пиво много холодного и вкусного. Сказали по пятницам веселые концерты - зайдем обязате...</p>
+                        <p class="quote1">Замечательный паб. В самом центре. Радует выбор блюд и закусок и пива. атмосфера неповторимая, как в настоящем пабе. Интерьер грандиозный. Кажется тут советская Яма была раньше - очень крутое помещение - красавцы. Пиво много холодного и вкусного. Сказали по пятницам веселые концерты - зайдем обязатеЗамечательный паб. В самом центре. Радует выбор блюд и закусок и пива. атмосфера неповторимая, как в настоящем пабе. Интерьер грандиозный. Кажется тут советская Яма была раньше - очень крутое помещение - красавцы. Пиво много холодного и вкусного.</p>
+                        <div class="btnAlign"><button class="all1">Показать полностью</button></div>
+                    </div>
+                </div>
+                <div class="row productQuotes">
+                    <div class="col-lg-1 col-md-1">
+                        <img class="imgAvatar" src="images/imgAvatar.png" alt="img">
+                    </div>
+                    <div class="col-lg-11 col-md-11 ">
+                        <h1>Иванов Иван</h1>
+                        <img class="productStars hidden-sm hidden-xs" src="images/stars.png" alt="">
+                        <p class="date">15 апреля 2015</p>
+                        <div class="hidden-lg hidden-md"><img class="productStars " src="images/stars.png" alt=""></div>
+                        <p class="quotePre2">Замечательный паб. В самом центре. Радует выбор блюд и закусок и пива. атмосфера неповторимая, как в настоящем пабе. Интерьер грандиозный. Кажется тут советская Яма была раньше - очень крутое помещение - красавцы. Пиво много холодного и вкусного. Сказали по пятницам веселые концерты - зайдем обязате...</p>
+                        <p class="quote2">Замечательный паб. В самом центре. Радует выбор блюд и закусок и пива. атмосфера неповторимая, как в настоящем пабе. Интерьер грандиозный. Кажется тут советская Яма была раньше - очень крутое помещение - красавцы. Пиво много холодного и вкусного. Сказали по пятницам веселые концерты - зайдем обязатеЗамечательный паб. В самом центре. Радует выбор блюд и закусок и пива. атмосфера неповторимая, как в настоящем пабе. Интерьер грандиозный. Кажется тут советская Яма была раньше - очень крутое помещение - красавцы. Пиво много холодного и вкусного.</p>
+                        <div class="btnAlign"><button class="all2">Показать полностью</button></div>
+                    </div>
+                </div>
+                <div class="formStarsDiv">
+                    <form action="#">
+                        <div class="wysi">
+                            <textarea id="some-textarea" placeholder="Текст сообщения" style="">       
+                            </textarea>
+                        </div>
+                        <div class="btnPostAlign"><button type="submit" class="postQuote">Оставить отзыв</button>
+                        </div>
+                    </form>
+                    <div class="wysiStars">
+                        <button><img id="star1" src="images/activStar.png" alt=""></button>
+                        <button><img id="star2" src="images/activStar.png" alt=""></button>
+                        <button><img id="star3" src="images/activStar.png" alt=""></button>
+                        <button><img id="star4" src="images/activStar.png" alt=""></button>
+                        <button><img id="star5" src="images/passiveStar.png" alt=""></button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="quotesDiv">
+            <h1 class="quotesH1 productH1">Похожие товары</h1>
+            <div class="row quotes">
+                <div class="col-lg-3 col-md-3 ">
+                    <div class="flowerPrise">
+                        <img src="images/flowerIris.png" alt="f">
+                        <h2>Хосты</h2>
+                        <h3>Упаковка, 100 г.</h3>
+                        <img class="flowerPriseStars" src="images/stars.png" alt="">
+                        <a class="flowerPriseReport" href="#">5 отзывов</a>
+                        <p><span>21</span>.90 руб</p>
+                        <a class="flowerPriseBasket" href="#">В корзину <img class="flowerPriseBasketImg" src="images/basket.png" alt=""></a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-3">
+                    <div class="flowerPrise">
+                        <img src="images/flowerIris.png" alt="f">
+                        <h2>Хосты</h2>
+                        <h3>Упаковка, 100 г.</h3>
+                        <img class="flowerPriseStars" src="images/stars.png" alt="">
+                        <a class="flowerPriseReport" href="#">5 отзывов</a>
+                        <p><span>21</span>.90 руб</p>
+                        <a class="flowerPriseBasket" href="#">В корзину <img class="flowerPriseBasketImg" src="images/basket.png" alt=""></a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-3 hidden-xs hidden-sm">
+                    <div class="flowerPrise">
+                        <img src="images/flowerIris.png" alt="f">
+                        <h2>Хосты</h2>
+                        <h3>Упаковка, 100 г.</h3>
+                        <img class="flowerPriseStars" src="images/stars.png" alt="">
+                        <a class="flowerPriseReport" href="#">5 отзывов</a>
+                        <p><span>21</span>.90 руб</p>
+                        <a class="flowerPriseBasket" href="#">В корзину <img class="flowerPriseBasketImg" src="images/basket.png" alt=""></a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-3 hidden-xs hidden-sm">
+                    <div class="flowerPrise">
+                        <img src="images/flowerIris.png" alt="f">
+                        <h2>Хосты</h2>
+                        <h3>Упаковка, 100 г.</h3>
+                        <img class="flowerPriseStars" src="images/stars.png" alt="">
+                        <a class="flowerPriseReport" href="#">5 отзывов</a>
+                        <p><span>21</span>.90 руб</p>
+                        <a class="flowerPriseBasket" href="#">В корзину <img class="flowerPriseBasketImg" src="images/basket.png" alt=""></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container footerCont">
+            <div class="row">
+                <div class="col-lg-4 col-md-4 footer1Col">
+                    <div class="footer1ColMargin">
+                        <h1 class="tel">+375 29 123- 45- 69</h1>
+                        <div class="hidden-md hidden-lg"></div>
+
+                        <a id="call" href="#">Заказать звонок</a>
+                        <p class="hidden-sm hidden-xs">2017 © Gardens - интернет-магазин для продажи<br> семян редких растений. Все права защищены</p>
+                        <h2 class="hidden-sm hidden-xs">К оплате принимаются:</h2>
+                        <img class="hidden-sm hidden-xs" src="images/pay_icons.png" alt="pay">
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-2 footerUl">
+                    <h2 class="hidden-sm hidden-xs">Каталог</h2>
+                    <ul>
+                        <li><a href="#">Ирисы</a></li>
+                        <li><a href="#">Лилейники</a></li>
+                        <li><a href="#">Хосты</a></li>
+                        <li><a href="#">Покровники</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-3 footerUl Ul2">
+                    <h2 class="hidden-sm hidden-xs">Информация</h2>
+                    <ul>
+                        <li><a href="#">О компании</a></li>
+                        <li><a href="#">Оплата и доставка</a></li>
+                        <li><a href="#">Комментарии и отзывы</a></li>
+                        <li><a href="#">Контакты</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-3 footerPrise">
+                    <h2>Скачать прайс-лист:</h2>
+                    <a href="#"><img src="images/download.png" alt="dowload">Прайс-лист (240 Кб)</a>
+
+                    <p>Мы в социальных сетях:</p>
+                    <a href="#"><img src="images/vk.png" alt="vk"></a>
+                    <a href="#"><img src="images/facebook.png" alt="f"></a>
+                    <a href="#"><img src="images/twitter.png" alt="t"></a>
+
+                    <p class="hidden-lg hidden-md footerP">2017 © Gardens - интернет-магазин для продажи семян редких растений. Все права защищены</p>
+                    <h2 class="hidden-lg hidden-md">К оплате принимаются:</h2>
+                    <img class="hidden-lg hidden-md" src="images/pay_icons.png" alt="pay">
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div class="container lr">
+        <div class="col-lg-6 col-md-6 l">
+            <p>2017 © Gardens</p>
+        </div>
+        <div class="col-lg-6 col-md-6 r">
+            <p>Разработка сайта Gik Media</p>
+        </div>
+    </div>
+
+
+
+    <!-- All Javascript at the bottom of the page for faster page loading -->
+
+    <script>
+        window.jQuery || document.write('<script src="includes/js/jquery-3.1.1.min.js"><\/script>')
+    </script>
+
+    <script src="includes/js/bootstrap.min.js"></script>
+    <script src="includes/js/myjs.js"></script>
+
+    <!--    wysiwyg-->
+    <script src="includes/js/bootstrap3-wysihtml5.all.min.js"></script>
+
+</body>
+
+</html>

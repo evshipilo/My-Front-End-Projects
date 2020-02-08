@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+    <!-- Website Title & Description for Search Engine purposes -->
+    <!--    <title></title>-->
+    <meta name="description" content="">
+    <meta charset="utf-8">
+
+    <!-- Mobile viewport optimized -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+
+    <link href="includes/css/bootstrap.min.css" rel="stylesheet">
+    <link href="includes/css/styles.css" rel="stylesheet">
+    <link href="includes/css/normalize.css" rel="stylesheet">
+    <link href="includes/css/bootstrap3-wysihtml5.min.css" rel="stylesheet">
+    <link href="includes/css/font-awesome.min.css" rel="stylesheet">
+
+</head>
+
+<body class="container-fluid background ">
+    <header>
+        <div onclick="jQuery('.bgDark').hide()" class="bgDark"></div>
+        <div class="bgDarkSm"></div>
+        <div class="container hidden-sm hidden-xs">
+            <div class="row headerTop globalMargin">
+                <div class="col-lg-8 col-md-8 ">
+                    <img src="images/phone.png" alt="1" class="phoneImg">
+                    <p class="phoneNumber ">+375 29 123-45-78</p>
+                    <img src="images/pin.png" alt="1" class="adressImg">
+                    <p class="adress">Минск, 222102, улица ХХХХ, д. ХХ/ХХ</p>
+                </div>
+                <div class="col-lg-4 col-md-4  ">
+                    <a href="#" class="user pull-right">
+                        <img src="images/user.png" alt="1" class="userImg "> Личный кабинет
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="border"></div>
+        <div class="container">
+            <div class="row headerMiddle ">
+                <div class="col-lg-4 col-md-4 col-sm-10 col-xs-10">
+                    <a href="#"><img class="logoImg" src="images/mainLogo.png" alt="1"></a>
+                </div>
+                <div class="col-lg-6 col-md-6 hidden-sm hidden-xs">
+                    <form class="formSearch" action="" method="get">
+                        <input class="inputSearch" name="s" placeholder="Поиск по сайту" type="search" required>
+                        <button class="submitSearch" type="submit"><img src="images/search.png" alt="1"></button>
+                    </form>
+                </div>
+                <div class="col-lg-2 col-md-2 hidden-sm hidden-xs">
+                    <a class="basketHeader" href="#">
+                        <img src="images/basket.png" alt="1"> Корзина
+                    </a>
+                    <p class="basketText">В корзине 0 товаров</p>
+                </div>
+
+
+                <div class="MenuSm col-sm-2 col-xs-2 hidden-lg hidden-md">
+
+                    <!--                phone menu-->
+
+                    <button id="logoMenuSm">
+                        <img src="images/logoMenuSm.png" alt="menu">
+                </button>
+
+                    <div class="sidenav ">
+                        <button id="closeMenuBtn">
+                        <img src="images/closeBtn.png" alt="menu">
+                        </button>
+                        <ul>
+                            <li><a href="#">Главная</a></li>
+                            <li><a href="#">Каталог</a></li>
+                            <li><a href="#">О нас</a></li>
+                            <li><a href="#">Доставка и оплата</a></li>
+                            <li><a href="#">Отзывы</a></li>
+                            <li><a href="#">Контакты</a></li>
+                        </ul>
+                        <form class="formSearchSm" action="" method="get">
+                            <input class="inputSearchSm" name="s" placeholder="Поиск по сайту" type="search" required>
+                            <button class="submitSearch" type="submit"><img src="images/seachBlack.png" alt="1"></button>
+                        </form>
+                        <a class="sidenavBtn1" href="#">Личный кабинет </a>
+                        <a class="sidenavBtn2" href="#">Корзина (0)</a>
+
+                    </div>
+                </div>
+            </div>
+
+
+            <!--            end phone menu-->
+
+
+            <div class="row backgroundMenu hidden-sm hidden-xs">
+                <nav class="col-lg-12 col-md-12  menuSpase">
+                    <ul class="headerMenu">
+                        <li><a href="#">Главная </a></li>
+                        <li role="presentation" class="dropdown dropMenu">
+                            <a onclick="jQuery('.bgDark').show()" class="dropdown-toggle " data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Каталог</a>
+                            <ul class="dropdown-menu dropList ">
+                                <li><a href="##">Ирисы <img src="images/arrowRight.png" alt="1"></a></li>
+                                <li><a href="#">Лилейники<img src="images/arrowRight.png" alt="1"></a></li>
+                                <li><a href="#">Хосты<img src="images/arrowRight.png" alt="1"></a></li>
+                                <li><a id="last" href="#">Покровники<img src="images/arrowRight.png" alt="1"></a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">О компании</a></li>
+                        <li><a href="#">Доставка и оплата</a></li>
+                        <li><a href="#">Комментарии и отзывы</a></li>
+                        <li><a href="#">Контакты</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+
+    </header>
+
+
+    <div class="container navDiv">
+        <p>Главная / Каталог / <span>О компании</span></p>
+    </div>
+    
+    <div class="container aboutContainer">
+        
+            <h1>О компании</h1>
+            <p>Лилейник гибридный, или лилейник садовый – общее название многочисленных сортов гибридного происхождения, которых в данное время уже более 60000. Наибольший вклад в селекцию лилейника внесли американские и австралийские цветоводы, сумевшие создать виды, различающиеся по форме цветка, по наличию-отсутствию аромата, по срокам цветения, высоте и такой широкой цветовой гаммы, что трудно сказать, какого цвета лилейника в культуре нет. Лилейник гибридный – предмет объемной и структурно сложной классификации, в которой растения разделяют по длине цветоноса, форме и величине цветка, срокам цветения, окраске, типу вегетации и еще многим признакам, и мы не станем углубляться в изложение этого научного труда, созданного в большей степени для ученых специалистов. Познакомим вас с некоторыми интересными видами и сортами лилейников, которые помогут вам составить впечатление об этом удивительном и прекрасном цветке.</p>
+        
+        <div class="row aboutImgRow">
+            <div class="col-lg-6 col-md-6  colMargin1">
+                <img id="aboutImg1" src="images/aboutImg1.jpg" alt="1">
+            </div>
+            <div class="col-lg-3 col-md-3  colMargin2">
+                <img id="aboutImg2" src="images/aboutImg2.jpg" alt="2">
+                <img id="aboutImg3" src="images/aboutImg3.jpg" alt="3">
+            </div>
+            <div class="col-lg-3 col-md-3 ">
+                <img id="aboutImg4" src="images/aboutImg4.jpg" alt="2">
+            </div>
+        </div>
+        <p>Лилейник гибридный, или лилейник садовый – общее название многочисленных сортов гибридного происхождения, которых в данное время уже более 60000. Наибольший вклад в селекцию лилейника внесли американские и австралийские цветоводы, сумевшие создать виды, различающиеся по форме цветка, по наличию-отсутствию аромата, по срокам цветения, высоте и такой широкой цветовой гаммы, что трудно сказать, какого цвета лилейника в культуре нет. Лилейник гибридный – предмет объемной и структурно сложной классификации, в которой растения разделяют по длине цветоноса, форме и величине цветка, срокам цветения, окраске, типу вегетации и еще многим признакам, и мы не станем углубляться в изложение этого научного труда, созданного в большей степени для ученых специалистов. Познакомим вас с некоторыми интересными видами и сортами лилейников, которые помогут вам составить впечатление об этом удивительном и прекрасном цветке.
+Лилейник гибридный, или лилейник садовый – общее название многочисленных сортов гибридного происхождения, которых в данное время уже более 60000. Наибольший вклад в селекцию лилейника внесли американские и австралийские цветоводы, сумевшие создать виды, различающиеся по форме цветка, по наличию-отсутствию аромата, по срокам цветения, высоте и такой широкой цветовой гаммы, что трудно сказать, какого цвета лилейника в культуре нет. Лилейник гибридный – предмет объемной и структурно сложной классификации, в которой растения разделяют по длине цветоноса, форме и величине цветка, срокам цветения, окраске, типу вегетации и еще многим признакам, и мы не станем углубляться в изложение этого научного труда, созданного в большей степени для ученых специалистов. Познакомим вас с некоторыми интересными видами и сортами лилейников, которые помогут вам составить впечатление об этом удивительном и прекрасном цветке.</p>
+    </div>
+    
+
+    <footer>
+        <div class="container footerCont">
+            <div class="row">
+                <div class="col-lg-4 col-md-4 footer1Col">
+                    <div class="footer1ColMargin">
+                        <h1 class="tel">+375 29 123- 45- 69</h1>
+                        <div class="hidden-md hidden-lg"></div>
+
+                        <a id="call" href="#">Заказать звонок</a>
+                        <p class="hidden-sm hidden-xs">2017 © Gardens - интернет-магазин для продажи<br> семян редких растений. Все права защищены</p>
+                        <h2 class="hidden-sm hidden-xs">К оплате принимаются:</h2>
+                        <img class="hidden-sm hidden-xs" src="images/pay_icons.png" alt="pay">
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-2 footerUl">
+                    <h2 class="hidden-sm hidden-xs">Каталог</h2>
+                    <ul>
+                        <li><a href="#">Ирисы</a></li>
+                        <li><a href="#">Лилейники</a></li>
+                        <li><a href="#">Хосты</a></li>
+                        <li><a href="#">Покровники</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-3 footerUl Ul2">
+                    <h2 class="hidden-sm hidden-xs">Информация</h2>
+                    <ul>
+                        <li><a href="#">О компании</a></li>
+                        <li><a href="#">Оплата и доставка</a></li>
+                        <li><a href="#">Комментарии и отзывы</a></li>
+                        <li><a href="#">Контакты</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-3 footerPrise">
+                    <h2>Скачать прайс-лист:</h2>
+                    <a href="#"><img src="images/download.png" alt="dowload">Прайс-лист (240 Кб)</a>
+
+                    <p>Мы в социальных сетях:</p>
+                    <a href="#"><img src="images/vk.png" alt="vk"></a>
+                    <a href="#"><img src="images/facebook.png" alt="f"></a>
+                    <a href="#"><img src="images/twitter.png" alt="t"></a>
+
+                    <p class="hidden-lg hidden-md footerP">2017 © Gardens - интернет-магазин для продажи семян редких растений. Все права защищены</p>
+                    <h2 class="hidden-lg hidden-md">К оплате принимаются:</h2>
+                    <img class="hidden-lg hidden-md" src="images/pay_icons.png" alt="pay">
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div class="container lr">
+        <div class="col-lg-6 col-md-6 l">
+            <p>2017 © Gardens</p>
+        </div>
+        <div class="col-lg-6 col-md-6 r">
+            <p>Разработка сайта Gik Media</p>
+        </div>
+    </div>
+
+
+
+    <!-- All Javascript at the bottom of the page for faster page loading -->
+
+    <script>
+        window.jQuery || document.write('<script src="includes/js/jquery-3.1.1.min.js"><\/script>')
+
+    </script>
+
+    <script src="includes/js/bootstrap.min.js"></script>
+    <script src="includes/js/myjs.js"></script>
+
+    <!--    wysiwyg-->
+    <script src="includes/js/bootstrap3-wysihtml5.all.min.js"></script>
+
+</body>
+
+</html>

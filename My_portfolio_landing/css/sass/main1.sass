@@ -1,0 +1,281 @@
+//@import "bourbon/bourbon"
+
+body
+	font-family: "Raleway", sans-serif
+	font-weight: 400
+	font-size: 16px
+	min-width: 320px
+	//position: relative
+	line-height: 1.6
+	-webkit-font-smoothing: antialised
+
+//body input:focus:required:invalid,
+//body textarea:focus:required:invalid
+	color: red
+//body input:required:valid,
+//body textarea:required:valid
+	color: green
+body input:focus::-webkit-input-placeholder 
+	color: transparent
+body input:focus::-moz-placeholder 
+	color: transparent
+body input:focus:-moz-placeholder 
+	color: transparent
+body input:focus:-ms-input-placeholder 
+	color: transparent
+body textarea:focus::-webkit-input-placeholder 
+	color: transparent
+body textarea:focus::-moz-placeholder 
+	color: transparent
+body textarea:focus:-moz-placeholder 
+	color: transparent
+body textarea:focus:-ms-input-placeholder 
+	color: transparent
+
+
+
+.hidden
+	display: none
+.main_head
+	overflow: hidden
+	position: relative
+	min-height: 480px
+//	padding-top: 20px
+.loader
+	position: fixed
+	background-color: #fff
+	width: 100%
+	height: 100%
+	left: 0
+	top: 0
+	z-index: 100
+.loaderImg
+	left: 0
+	top: 0
+	width: 100%
+	height: 100%
+	position: fixed
+	background:  url(../img/hex-loader2.gif) no-repeat 50% 50%
+	z-index: 101
+.top_mnu
+	position: fixed
+	width: 100%
+	height: 100%
+	background-color: rgba(0,0,0,.85)
+	z-index: 50
+	right: 0
+	top: 0
+	display: none
+	ul,
+	li
+		list-style-type: none
+		padding: 0
+		margin: 0
+	ul
+		margin-top: 15%
+		text-align: center
+		li
+			&:hover
+				background-color: rgba(255,255,255,.08)
+				transition-delay: 0.1s
+				transition-duration: .5s
+			&:hover a
+				color: #b1714b
+			&:nth-child(1) a
+				animation-delay: .1s
+			&:nth-child(2) a
+				animation-delay: .2s
+			&:nth-child(3) a
+				animation-delay: .3s
+			&:nth-child(4) a
+				animation-delay: .4s
+		a
+			color: #fff
+			display: block
+			text-transform: uppercase
+			font-size: 16px
+			font-weight: 500
+			//opacity: 0
+			position: relative
+			height: 60px
+			padding-top: 20px
+			outline: none
+			letter-spacing: 8px
+section
+	padding: 70px 0px
+.sectionAbout
+	background-color: #fff3e0
+	text-align: center
+.section_header
+	letter-spacing: 4px
+	font-weight: 600
+	font-size: 20px
+	h2
+		font-size: 24px
+		font-weight: 700
+	.s_descr
+		display: inline-block
+		padding-bottom: 20px
+		border-bottom: 1px solid #111
+		margin-bottom: 50px
+.section_content
+	h3
+		letter-spacing: 4px
+		font-weight: 600
+		font-size: 20px
+	h2
+		letter-spacing: 4px
+		font-weight: 700
+		font-size: 24px
+	img
+		width: 100%
+		border-radius: 50%
+		max-width: 250px
+	.personal_last_block
+		li
+			display: inline-block
+			margin: 10px
+.social_wrap
+	a
+		padding: 5px
+		font-size: 24px
+.sectionPortfolio
+	text-align: center
+	background-color: #9e9e9e
+	.filter_div
+		margin-bottom: 40px
+		li
+			letter-spacing: 2px
+			font-weight: 400
+			font-size: 18px
+			list-style-type: none
+			cursor: pointer
+			display: inline-block
+			margin: 0 40px 0 0
+	.active
+		border-bottom: 2px solid #b1714b
+		color: #fff
+	.portfolio_item
+		
+		display: none
+		padding: 3px
+		position: relative
+		img
+			width: 100%
+			border: 1px solid #fff*0.9
+		.port_item_cont
+			position: absolute
+			top: 0
+			left: 0
+			width: 100%
+			height: 100%
+			background-color: rgba(0,0,0,.8)
+			text-align: center
+			padding-top: 5%
+			opacity: 0
+			transition: all .5s
+		&:hover .port_item_cont
+			opacity: 1
+			padding-top: 0%
+		h3
+			font-weight: 400
+			font-size: 16px
+			color: #fff
+			text-transform: uppercase
+			
+		p
+			color: #fff*0.7
+			font-weight: 400
+			font-size: 14px
+		a
+			background-color: transparent
+			border: #fff*0.7 1px solid
+			padding: 2px 10px
+			display: inline-block
+			color: #b1714b
+.podrt_descr
+	background-color: #fff
+	max-width: 500px
+	margin: auto
+	padding: 3px
+	p,
+	h3
+		padding: 20px
+		padding-bottom: 0
+	h3
+		margin-bottom: 0
+		text-align: center
+		text-transform: uppercase
+		font-weight: 400
+		margin-top: 20px
+		padding-top: 25px
+	p
+		margin-top: 0
+	img
+		width: 100%
+		margin-top: 10px
+.sectionContacts
+	background: #fff
+	.section_header
+		text-align: center
+	.section_content
+		text-align: left
+		.contact_box
+			margin-top: 50px
+			h3
+				margin-bottom: -10px
+			i
+				font-size: 24px
+				color: #fff*0.5
+	form
+		margin-top: 50px
+		text-align: left
+		width: 100%
+		i
+			color: red
+			margin-right: 5px
+		.controls
+			margin-bottom: 50px
+			position: relative
+			p
+				position: absolute
+				top: 10px
+				left: 0
+				font-size: 12px
+				font-weight: 500
+				color: red*0.7
+			.tArea
+				position: absolute
+				top: 85px
+				left: 0
+				font-size: 12px
+				font-weight: 500
+				color: red*0.7
+			textarea
+				width: 100%
+				padding-bottom: 50px
+			input
+				width: 100%
+		.submitBtn 
+			background-color: #fff
+			outline: none
+			border: 1px solid #b1714b
+			padding: 5px
+			
+			&:hover
+				background-color: #b1714b
+				transition: all .5s
+				border: 1px solid #b1714b*0.5
+footer
+	background-color: black
+	p
+		color: #FFF*0.5
+		margin-top: 50px
+		padding-bottom: 30px
+	li
+		text-decoration: none
+		display: inline-block
+		float: right
+		margin-right: 20px
+		margin-top: 30px
+		padding-bottom: 30px

@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+    <!-- Website Title & Description for Search Engine purposes -->
+    <title></title>
+    <meta name="description" content="">
+    <meta charset="utf-8">
+
+    <!-- Mobile viewport optimized -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <link href="includes/css/bootstrap.min.css" rel="stylesheet">
+    <link href="includes/css/styles.css" rel="stylesheet">
+
+</head>
+
+<body class="container-fluid">
+    <div id="main">
+        <header>
+            <div class="container ">
+
+                <div class="row clearfix hidden-sm hidden-xs">
+                    <div class="col-md-6 pull-left">
+                        <div class="phone1">
+                            <img src="images/header_phone.jpg" alt="phone" class="phone_img"> 8 (017) 272-36-00
+                        </div>
+                        <div class="phone1">
+                            <img src="images/header_phone.jpg" alt="phone" class="phone_img"> 8 (017) 272-36-10
+                        </div>
+                    </div>
+                    <div class="col-md-6 pull-right">
+                        <a href="#" class="basket">Корзина ( +1)</a>
+                        <a href="#" class="private">Личный кабинет</a>
+                    </div>
+                </div>
+            </div>
+            <div class="bottom_header_wide ">
+                <div class="bottom_header container">
+
+                    <div class="row col-sm-2 col-xs-2 clearfix pull-right visible-sm     visible-xs">
+
+                        <button onclick="openNav()" class="menu320">
+                            <img src="images/320menu.png" alt="1">
+                        </button>
+                        <div id="mySidenav" class="sidenav ">
+                            <a href="javascript:void(0)" id="closebtn" onclick="closeNav()"><img class="closebtnImg" src="images/x320.png" alt="x"></a>
+                            <a href="#" class=" private320">Личный кабинет</a>
+                            <a href="#" class=" basket320">Корзина ( +1)</a>
+                            <a href="#" class="li320">Отзывы</a>
+                            <a href="#" class="li320">Контакты</a>
+                            <a href="#" class="li320">Как заказать</a>
+                            <a href="#" class="li320">О нас</a>
+                            <a href="#" class="li320">Наши работы</a>
+                            <a href="#" class="li320">Галерея</a>
+                            <a href="#" class="li320 li320last">Главная </a>
+                            <div class="phone3">
+                                <img src="images/header_phone.jpg" alt="phone" class="phone_img"> 8 (017) 272-36-00
+                            </div>
+                            <div class="phone3">
+                                <img src="images/header_phone.jpg" alt="phone" class="phone_img"> 8 (017) 272-36-10
+                            </div>
+
+                        </div>
+
+                        <script>
+                            function openNav() {
+                                document.getElementById("mySidenav").style.right = "0px";
+                                document.getElementById("main").style.position = "absolute";
+                                document.getElementById("main").style.left = "-255px";
+                                document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+                                document.getElementById("closebtn").style.display = "block";
+
+                            }
+
+                            function closeNav() {
+                                document.getElementById("mySidenav").style.right = "-255px";
+                                document.getElementById("main").style.left = "0";
+
+                                setTimeout(function() {
+                                    document.getElementById("main").style.position = "static";
+                                }, 500);
+
+                                document.body.style.backgroundColor = "white";
+                                document.getElementById("closebtn").style.display = "none";
+
+                            }
+                        </script>
+
+                    </div>
+
+                    <div class="row clearfix">
+                        <div class="col-md-2 col-sm-4 col-xs-4">
+                            <a href="#" class="header_logo">
+                                <img src="images/header_logo.png" alt="foto-holst">
+                            </a>
+                        </div>
+                        <div class="col-md-10 hidden-sm hidden-xs">
+                            <ul class="header_menu">
+                                <li><a href="#">Отзывы</a></li>
+                                <li><a href="#">Контакты</a></li>
+                                <li><a href="#">Как заказать</a></li>
+                                <li><a href="#">О нас</a></li>
+                                <li><a href="#">Наши работы</a></li>
+                                <li><a href="#">Галерея</a></li>
+                                <li><a href="#">Главная </a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+
+        <!--carousel-->
+
+        <div id="carousel-example-generic" class="carousel slide hidden-sm hidden-xs forText" data-ride="carousel">
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner" role="listbox">
+                <div class="item active">
+                    <div class="img_right">
+                        <img src="images/site-main.png" alt="">
+                    </div>
+                    <img class="img_unvisible" src="images/site-main.png" alt="img">
+                </div>
+                <div class="item">
+                    <div class="img_right">
+                        <img src="images/site-main.png" alt="">
+                    </div>
+                    <img class="img_unvisible" src="images/site-main.png" alt="img">
+
+                </div>
+                <div class="item">
+                    <div class="img_right"><img src="images/site-main.png" alt=""></div>
+                    <img class="img_unvisible" src="images/site-main.png" alt="img">
+
+                </div>
+                <div class="ffff">
+                    <h1>Скидки на всю печать</h1>
+                    <p>Всю неделю печать изображений на холстах<br> со скидкой до 35% </p>
+                    <button>Узнать подробнее&nbsp;&nbsp;&nbsp;&nbsp; <img src="images/arrow.jpg" alt="1"></button>
+                </div>
+            </div>
+
+        </div>
+        <!--    end of carousel-->
+        <div class="ffff uuuu visible-sm visible-xs">
+            <h1>Скидки на всю печать</h1>
+            <p>Всю неделю печать изображений на холстах<br> со скидкой до 35% </p>
+            <button>Узнать подробнее&nbsp;&nbsp;&nbsp;&nbsp; <img src="images/arrow.jpg" alt="1"></button></div>
+
+
+
+        <div class="image_download container ">
+
+            <h2>Загрузить изображение</h2>
+            <p>Чем качественне будет снимок, тем четче и красочней получится картина.</p>
+
+            <div class="row clearfix hidden-sm hidden-xs">
+
+                <ul class="clearfix" role="tablist">
+                    <li role="presentation" class="active col-md-6 ">
+                        <a href="#home" aria-controls="home" role="tab" data-toggle="tab" class="load_btn1" id="btn1">
+                            <h3 id="btn1h">Загрузить с камеры</h3>
+                            <p>Использовать собственное изображение</p>
+                        </a>
+                    </li>
+                    <li role="presentation" class="col-md-6 ">
+                        <a href="#profile" aria-controls="profile" role="tab" data-toggle="tab" class="load_btn2" id="btn2">
+                            <h3 id="btn2h">Выбрать из галереи</h3>
+                            <p>Использовать шаблонное изображение</p>
+                        </a>
+                    </li>
+
+                </ul>
+
+                <script>
+                    btn2.onclick = function() {
+                        btn1.style.background = 'url(images/fotoGrey.png) no-repeat 35px 50px';
+                        btn1.style.boxShadow = 'none';
+                        btn1h.style.color = '#919ba4';
+                        btn2.style.background = 'url(images/folderRed.png) no-repeat 35px 50px';
+                        btn2.style.boxShadow = '10px 17px 54px 0px rgba(196, 208, 227, 0.75)';
+                        btn2h.style.color = '#ff5a2e';
+
+
+                    };
+                    btn1.onclick = function() {
+                        btn1.style.background = 'url(images/fotoRed.png) no-repeat 35px 50px';
+                        btn1.style.boxShadow = '10px 17px 54px 0px rgba(196, 208, 227, 0.75)';
+                        btn1h.style.color = '#ff5a2e';
+                        btn2.style.background = 'url(images/folderGrey.png) no-repeat 35px 50px';
+                        btn2.style.boxShadow = 'none';
+                        btn2h.style.color = '#919ba4';
+                    };
+                </script>
+            </div>
+
+            <div class="row clearfix visible-sm visible-xs">
+
+                <ul class="clearfix" role="tablist">
+                    <li role="presentation" class="active col-sm-6 col-xs-6">
+                        <a href="#home" aria-controls="home" role="tab" data-toggle="tab" class="load_btn1_320" id="btn1_320">
+                        </a>
+                    </li>
+                    <li role="presentation" class=" col-sm-6 col-xs-6">
+                        <a href="#profile" aria-controls="profile" role="tab" data-toggle="tab" class="load_btn2_320" id="btn2_320">
+                        </a>
+                    </li>
+
+                </ul>
+
+                <script>
+                    btn2_320.onclick = function() {
+                        btn1_320.style.background = 'url(images/fotoGrey.png) no-repeat 50% 50%';
+                        btn1_320.style.boxShadow = 'none';
+                        //                        btn1h.style.color = '#919ba4';
+                        btn2_320.style.background = 'url(images/folderRed.png) no-repeat 50% 50%';
+                        btn2_320.style.boxShadow = '10px 17px 54px 0px rgba(196, 208, 227, 0.75)';
+                        //                        btn2h.style.color = '#ff5a2e';
+                    };
+                    btn1_320.onclick = function() {
+                        btn1_320.style.background = 'url(images/fotoRed.png) no-repeat 50% 50%';
+                        btn1_320.style.boxShadow = '10px 17px 54px 0px rgba(196, 208, 227, 0.75)';
+                        //                        btn1h_320.style.color = '#ff5a2e';
+                        btn2_320.style.background = 'url(images/folderGrey.png) no-repeat 50% 50%';
+                        btn2_320.style.boxShadow = 'none';
+                        //                        btn2h.style.color = '#919ba4';
+                    };
+                </script>
+            </div>
+
+        </div>
+        <div class="tab-content">
+            <div role="tabpanel" class="tab-pane active" id="home"></div>
+            <div role="tabpanel" class="tab-pane container-fluid" id="profile">
+
+                <div class="our_works_wide">
+
+                    <div class="container">
+                        <h1>Наши работы</h1>
+                        <p>Выполненные работы, фото готовых холстов.</p>
+
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="block_img ">
+                                    <a href="#">
+                                        <img src="images/block_6_1.jpg" alt="1">
+                                        <div class="back"></div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="block_img ">
+                                    <a href="#"><img src="images/block_6_2.jpg" alt="1">
+                                        <div class="back"></div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="block_img ">
+                                    <a href="#"><img src="images/block_6_3.jpg" alt="1">
+                                        <div class="back"></div>
+                                    </a>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="row hidden-xs hidden-sm">
+                            <div class="col-md-4 ">
+                                <div class="block_img ">
+                                    <a href="#">
+                                        <img src="images/block_6_1.jpg" alt="1">
+                                        <div class="back"></div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="block_img ">
+                                    <a href="#"><img src="images/block_6_2.jpg" alt="1">
+                                        <div class="back"></div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="block_img ">
+                                    <a href="#"><img src="images/block_6_3.jpg" alt="1">
+                                        <div class="back"></div>
+                                    </a>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <button>Смотреть все работы&nbsp;&nbsp;&nbsp;&nbsp; <img src="images/arrow.jpg" alt="1"></button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+
+
+        <div class="notebook hidden-sm hidden-xs">
+            <div class="ntb_item container">
+                <h3 class="ntb_h">Перетащить файл в окно или</h3>
+                <button type="button" class="btn btn-default ntb_btn">
+                <p>Выбрать файл</p>
+                <img src="images/arrow_up.png" alt="up">
+            </button>
+
+            </div>
+        </div>
+
+
+        <div class=" visible-sm visible-xs">
+            <div class="notebook_320 container">
+                <button type="button" class="btn btn-default ntb_btn_320">
+                <p>Выбрать файл</p>
+                <img src="images/arrow_up.png" alt="up">
+                </button>
+
+            </div>
+        </div>
+
+
+        <div class="order_3 container">
+
+            <h1>Как заказать</h1>
+            <p>Для заказа печати изображения на холсте следуйте инструкциям.</p>
+
+            <div class="row">
+                <article class="col-md-4">
+                    <img src="images/block3_1.jpg" alt="1">
+                    <h2>Загрузите фото в наш сервис!</h2>
+                    <p>Просто нажмите кнопку "Загрузить изображение" и перетащите снимок в окно</p>
+                </article>
+                <article class="col-md-4">
+                    <img src="images/block3_2.jpg" alt="2">
+                    <h2>Редактирование холста </h2>
+                    <p>Картина будет в точности напечататна, так как вы настроите..</p>
+                </article>
+                <article class="col-md-4">
+                    <img src="images/block3_3.jpg" alt="3">
+                    <h2>Оформление заявки</h2>
+                    <p>Отправьте нам контактные данные и мы распечатаем ваш холст.</p>
+                </article>
+            </div>
+        </div>
+
+        <div class="our_works_wide">
+
+            <div class="container">
+                <h1>Наши работы</h1>
+                <p>Выполненные работы, фото готовых холстов.</p>
+
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="block_img ">
+                            <a href="#">
+                                <img src="images/block_6_1.jpg" alt="1">
+                                <div class="back"></div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="block_img ">
+                            <a href="#"><img src="images/block_6_2.jpg" alt="1">
+                                <div class="back"></div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="block_img ">
+                            <a href="#"><img src="images/block_6_3.jpg" alt="1">
+                                <div class="back"></div>
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="row hidden-xs hidden-sm">
+                    <div class="col-md-4 ">
+                        <div class="block_img ">
+                            <a href="#">
+                                <img src="images/block_6_1.jpg" alt="1">
+                                <div class="back"></div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="block_img ">
+                            <a href="#"><img src="images/block_6_2.jpg" alt="1">
+                                <div class="back"></div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="block_img ">
+                            <a href="#"><img src="images/block_6_3.jpg" alt="1">
+                                <div class="back"></div>
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+
+                <button>Смотреть все работы&nbsp;&nbsp;&nbsp;&nbsp; <img src="images/arrow.jpg" alt="1"></button>
+
+            </div>
+
+        </div>
+
+        <div class="sofa_block">
+
+            <div class="sofa_content container">
+                <h1>Преимущества</h1>
+                <p>нашего сервиса печати изображений на холсте.</p>
+                <div class="row">
+                    <article class="col-md-4">
+                        <img src="images/2block3_1.jpg" alt="1">
+                        <h2>Качественная печать</h2>
+                    </article>
+                    <article class="col-md-4">
+                        <img src="images/2block3_2.jpg" alt="2">
+                        <h2>Экологические материалы</h2>
+                    </article>
+                    <article class="col-md-4">
+                        <img src="images/2block3_3.jpg" alt="3">
+                        <h2>Срок изготовления 2 дня</h2>
+                    </article>
+                </div>
+            </div>
+
+            <button>Загрузить фото&nbsp;&nbsp;&nbsp;&nbsp; <img src="images/arrow_up_wite.jpg" alt="1"></button>
+        </div>
+
+        <footer>
+
+            <div class="bottom_header container">
+                <div class="bottom_footer row clearfix ">
+                    <a href="#" class=" col-md-2 logo_foo_320 col-sm-12 col-xs-12 ">
+                        <img src="images/footer_logo.jpg" alt="foto-holst">
+                    </a>
+
+                    <ul class="header_menu footer_menu col-md-10 col-sm-12 col-xs-12">
+
+                        <li><a href="#">Отзывы</a></li>
+                        <li><a href="#">Контакты</a></li>
+                        <li><a href="#">Как заказать</a></li>
+                        <li><a href="#">О нас</a></li>
+                        <li><a href="#">Наши работы</a></li>
+                        <li><a href="#">Галерея</a></li>
+                        <li><a href="#">Главная </a></li>
+
+                    </ul>
+
+
+                </div>
+
+
+                <div class="row">
+                    <a href="#" class="col-md-4 col-sm-12 col-xs-12">
+                        <h1 class="company">ООО “Саламандра-Плюс”</h1>
+                    </a>
+                </div>
+
+                <div class="row">
+                    <div class="footer_tel col-md-5 col-sm-12 col-xs-12">
+                        <div class=" phone2 ">
+                            <img src="images/header_phone.jpg" alt="phone" class="phone_img"> 8 (017) 272-36-00
+                        </div>
+                        <div class=" phone2 ">
+                            <img src="images/header_phone.jpg" alt="phone" class="phone_img"> 8 (017) 272-36-10
+                        </div>
+                        <a href="#" class="back_call ">Заказать обратный звонок</a>
+                    </div>
+
+
+                    <p class="footer_adress col-md-3 col-sm-12 col-xs-12">220089, Беларусь, г. Минск, ул. Гурского, д. 46,<br> пом. 17 (вход в цокольный этаж со стороны<br> жилого дома)</p>
+
+                    <button class="footer_button col-md-4 hidden-xs hidden-sm ">
+                        Смотреть на карте&nbsp;&nbsp;&nbsp;&nbsp; 
+                        <img src="images/arrow_write_red.jpg" alt="1">
+                    </button>
+                </div>
+            </div>
+
+
+            <div class="footer_wide">
+                <div class=" container clearfix">
+                    <div class="row hidden-xs hidden-sm">
+                        <div class="left_icons col-md-9 ">
+                            <a href="#"><img src="images/footer_pay1.jpg" alt="1"></a>
+                            <a href="#"><img src="images/footer_pay2.jpg" alt="1"></a>
+                            <a href="#"><img src="images/footer_pay3.jpg" alt="1"></a>
+                            <a href="#"><img src="images/footer_pay4.jpg" alt="1"></a>
+                            <a href="#"><img src="images/footer_pay5.jpg" alt="1"></a>
+                        </div>
+                        <div class="right_icons col-md-3 ">
+
+                            <a href="#"><img src="images/social1.jpg" alt="1"></a>
+                            <a href="#"><img src="images/social2.jpg" alt="1"></a>
+                            <a href="#"><img src="images/social3.jpg" alt="1"></a>
+                            <a href="#"><img src="images/social4.jpg" alt="1"></a>
+
+                        </div>
+                    </div>
+                    <div class="row visible-sm visible-xs">
+                        <div class="col-sm-6  col-xs-6  ">
+                            <a href="#" class="pic320"><img src="images/footer_pay1.jpg" alt="1"></a>
+                        </div>
+                        <div class="col-sm-6 col-xs-6 ">
+                            <a href="#" class="pic320"><img src="images/footer_pay2.jpg" alt="1"></a>
+                        </div>
+                        <div class="col-sm-6 col-xs-6 ">
+                            <a href="#" class="pic320"><img src="images/footer_pay3.jpg" alt="1"></a>
+                        </div>
+                        <div class="col-sm-6 col-xs-6 ">
+                            <a href="#" class="pic320"><img src="images/footer_pay4.jpg" alt="1"></a>
+                        </div>
+                        <div class="col-sm-6 col-xs-6 ">
+                            <a href="#" class="pic320"><img src="images/footer_pay5.jpg" alt="1"></a>
+                        </div>
+                        <div class=" col-sm-12 col-xs-12 ">
+                            <div class="right_icons320">
+
+                                <a href="#"><img src="images/social1.jpg" alt="1"></a>
+                                <a href="#"><img src="images/social2.jpg" alt="1"></a>
+                                <a href="#"><img src="images/social3.jpg" alt="1"></a>
+                                <a href="#"><img src="images/social4.jpg" alt="1"></a>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+
+        </footer>
+
+        <!-- All Javascript at the bottom of the page for faster page loading -->
+
+        <script>
+            window.jQuery || document.write('<script src="includes/js/jquery-3.1.1.min.js"><\/script>')
+        </script>
+
+        <script src="includes/js/bootstrap.min.js"></script>
+
+    </div>
+</body>
+
+</html>
